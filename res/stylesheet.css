@@ -1,0 +1,214 @@
+
+body {
+	background: #eee;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color: #222;	
+	padding: 10px;
+	}
+	
+li {
+	padding: 5px;	
+}
+
+h1 {
+	font-size:14pt;
+	font-weight:bold;
+	color: #333;
+	margin:0px;
+	padding:5px 0px 5px 10px;
+	background-color: #c7d9ff;
+	margin: 25px 0px 15px 0px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;    
+}
+
+h4 {
+	margin:0;
+	padding: 3px 0px 12px 0px;
+	border; 0;
+	font-size:14px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;    	
+}
+
+#hr {       
+     clear: both;
+     background-color: #144581;
+     height: 3px;
+     border: 0px;
+     padding:0px;
+     margin:0px;
+     }
+
+a {color:#0358b8; font-weight:bold;text-decoration:none;}
+a:hover {color:#777;text-decoration:none;}
+a.button {color:white;text-decoration:none;}
+
+
+/* ------------ Tables --------- */
+
+
+button {
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	padding: 3px;
+	float:right;
+	margin:5px;	
+    width:90px;
+}
+
+input {
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	width:195px;
+    height:23px;
+    margin:5px;
+    border: 1px solid #ddd;
+    font-size:12px;
+    text-align:left;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;    
+    float:right;
+    background-color: #fff;	
+}
+
+fieldset {
+  	width:330px;  
+    padding:10px;  
+    border: 1px solid #ddd;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;    
+    margin: auto;
+ }
+ 
+label {
+   	width:100px;
+    line-height:23px;
+    padding-left:3px;
+    padding-top:4px;
+    margin:5px;
+    float:left;	
+    color:#003;
+}
+
+#clear {
+    clear:both;
+}
+
+img {/* border style for all images */
+  border: 0;
+}
+  
+img.b {/* replacement for <br /> after images */
+  display: block; /* forces line break for content after */
+}
+
+img.b20 {
+  width: 20.0em; 
+  padding-left: 4.0em;
+  padding-top: 2.0em;
+  padding-bottom: 2.2em;
+}
+
+img.thumbnail {
+  width: 100%;
+  height: 100%; 
+}
+
+div.gallery {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;   	
+	width: 60.0em;
+	margin: 0.5em;		
+}
+
+div.imagegalleryimage {
+	border-top: 5px solid #333;
+	border-left: 5px solid #333;	
+	border-right: 5px solid #333;
+	border-bottom: 8px solid #333;
+	padding: 0px;
+	overflow: Hidden; 
+	margin: 0;
+	width: 16.0em;
+  	height: 13.0em;
+}
+
+div.imagegallerythumbnail {
+		-moz-box-shadow: 3px 3px 4px #bbb;
+		-webkit-box-shadow: 3px 3px 4px #bbb;
+		box-shadow: 3px 3px 4px #000;
+		/* For IE 8 */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#bbbbbb')";
+		/* For IE 5.5 - 7 */
+		filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#bbbbbb');	
+		width: 17.0em;
+		margin: 0.5em;
+		height: 16.0em;
+		background: #ffffff;
+		border: 1px solid #aaa;
+		padding: 11px;
+		float:left;	
+}
+
+div.caption {
+	float: left;
+	width: 100%;
+	display: block; 
+	padding-top: 2pt;
+	padding-bottom: 2pt;	
+	text-align: center;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:bold;
+}
+
+div.smallcaption {
+	display: block;
+	float: left;
+	width: 100%;
+	padding-bottom: 1.0em;	
+	text-align: center;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size:9px;
+}
+
+div.errormessage {
+	display: block;
+	width: 50%;
+	padding: 0.5em;
+	margin:1.0em;	
+	text-align: center;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;	
+	color: #b00;
+	border: 1pt solid #b00;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;    
+}
+
+div.loginerrormessage {
+	display: block;
+	width: 80%;
+	padding: 0.5em;
+	margin:1.0em;	
+	text-align: center;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;	
+	color: #b00;
+	border: 1pt solid #b00;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;    
+}
+
+div.audit {
+	display: block;
+	width: 50%;
+	padding: 0.1em;
+	margin:0.2em;	
+	text-align: left;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;    
+}

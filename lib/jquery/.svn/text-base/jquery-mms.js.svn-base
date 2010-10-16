@@ -1,0 +1,45 @@
+/**
+ * This method calls the webservice to check whether the selected managed stream
+ * has a workflow of broadcasting, and if it is registered, then create an 
+ * activity record and wait until coast is clear
+ */
+
+function stopSubmit() {
+	return false;
+}
+
+$.editTextFormDisplay = function (contentID,text) {
+		$("#addnewImages").hide();
+        $("#EDITTEXT").animate({ opacity: "show" }, "slow");
+		$("#CID").val(contentID);
+		$("#MMSTEXT").val(text); 
+}
+
+
+$.saveFormDisplay = function()
+{
+        $("#ADDNEWBUTTONFORM").hide();
+        $("#EDIT").hide();
+        $("#SAVE").animate({ opacity: "show" }, "slow");			          	
+};
+
+$.saveFormReDisplay = function(performerName,keyword)
+{
+        $("#ADDNEWBUTTONFORM").hide();
+        $("#EDIT").hide();
+        $("#SAVE").animate({ opacity: "show" }, "slow");
+		$("#ADDNAME").val(performerName);
+		$("#ADDKEYWORD").val(keyword);        			          	
+};
+
+$.editFormDisplay = function(serviceUserId,performerName,keyword)
+{
+        $("#ADDNEWBUTTONFORM").hide();
+        $("#SAVE").hide();
+        $("#EDIT").show();
+		$("#EDIT").animate({ opacity: "show" }, "slow");
+		$("#EDITSERVICEUSERID").val(serviceUserId);
+		$("#EDITNAME").val(performerName);
+		$("#EDITKEYWORD").val(keyword);					         	
+};
+
