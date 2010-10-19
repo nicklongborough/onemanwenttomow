@@ -33,7 +33,7 @@
 			$userid = getUserIdByUsername($username);
 			$_SESSION['username'] = $username;
 			$_SESSION['userid'] = $userid; 
-			header('location:index.php');				
+			header('location:view/mediagallery.php');				
 			die();
 		} else {
 			session_destroy(); // Log user out
@@ -57,10 +57,11 @@ echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www
 				echo '<div class="loginerrormessage">'.$error.'</div>	';
 			}	
 			echo '
+			<legend>Login</legend>
 			<table id="login_table">
 				<form method="post" name="login_form" id="login_form" action="login.php">
-					<tr><td style="border-width:0px;">Email:</td><td style="border-width:0px;"><input type="text" name="USERNAME" size="30" value="'.$username.'"/></td></tr>
-					<tr><td style="border-width:0px;">Password:</td><td style="border-width:0px;"><input type="password" name="PASSWORD" size="30" /></td></tr>
+					<tr><td style="border-width:0px;padding-left:23pt;text-align:left;">Email</td><td style="border-width:0px;"><input type="text" name="USERNAME" size="30" value="'.$username.'"/></td></tr>
+					<tr><td style="border-width:0px;padding-left:23pt;text-align:left;">Password</td><td style="border-width:0px;"><input type="password" name="PASSWORD" size="30" /></td></tr>
 					<tr><td colspan="2" style="text-align:right; border-width:0px;"><button onclick="this.submit();">Go</button></td></tr>
 				</form>
 			</table>

@@ -35,17 +35,18 @@ echo '
 		<script type="text/javascript" src="user.js"></script>	
 	</head>
 	<body>
-	<div class="container">
+	<div class="container">';
+	include("header.php");
+echo '
 		<form id="submit" method="post">
 			<input type="hidden" name="ACTION" id="ACTION" value="'.$action.'" />
-			<input type="hidden" name="USERID" id="USERID" value="'.$userid.'" />	
-			<h1>Details ...</h1>';
+			<input type="hidden" name="USERID" id="USERID" value="'.$userid.'" />';
 			if ($erroroccured) {
 				echo '<div class="errormessage">'.$error.'</div>	';
 			}	
 			echo '
 			<fieldset>
-				<legend>User</legend>
+				<legend>User Details </legend>
 					<label>Email</label><input id="USERNAME" class="USERNAME" name="USERNAME" size="25" type="text" value="'.$user['USERNAME'].'" />
 					<label>Confirm Email</label><input id="USERNAME_CONFIRM" class="USERNAME_CONFIRM" name="USERNAME_CONFIRM" size="25" type="text" value="'.$user['USERNAME'].'" />					
 					<label>Password</label><input id="PASSWORD" class="PASSWORD" name="PASSWORD" size="25" type="password" value="" />				

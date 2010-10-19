@@ -15,19 +15,19 @@ echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 		<html xmlns="http://www.w3.org/1999/xhtml" >
 	<head>
-		<title>onemanwenttomow - </title>
+		<title>onemanwenttomow</title>
 		<link rel="stylesheet" href="../res/stylesheet.css" type="text/css" media="all" />	
 	</head>
 	<body>
-	<div class="container">
+	<div class="container">';
+	include("header.php");
+echo '
 		<div id="upload">
 			<form id="form" action="../service/photoloader.php" method="post" enctype="multipart/form-data">
 				<fieldset>
 					<legend>Add Picture</legend>
-					<label></label><input type="file" name="file" id="file" />
-					<div id="clear"></div>
-					<input type="submit" id="submit" value="Upload Image" />
-					<div id="clear"></div>
+					<input class="imageselect" type="file" name="file" id="file" />
+					<button onclick="this.submit();" >Upload Image</button>
 				</fieldset>
 			</form>
 		</div>
