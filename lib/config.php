@@ -7,6 +7,7 @@ $db_user = 'dbo328145735';
 $db_pass = 'w3bus3r';
 $db_user_write = 'db0328145735';
 $db_pass_write = 'w3bus3r';
+
 	if ($_SERVER["SERVER_NAME"] == 'localhost') {
 		$db_ip = 'localhost';
 		$db_user = 'web';
@@ -17,6 +18,7 @@ $db_pass_write = 'w3bus3r';
 		$db_ip = 'db2465.oneandone.co.uk';
 		$db_user = 'dbo328145735';
 		$db_pass = 'w3bus3r';
+		$db_ip_write = 'db2465.oneandone.co.uk';
 		$db_user_write = 'dbo328145735';
 		$db_pass_write = 'w3bus3r';
 	}
