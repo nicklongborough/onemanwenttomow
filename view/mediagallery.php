@@ -28,12 +28,14 @@ echo '
 		<link rel="stylesheet" href="../res/stylesheet.css" type="text/css" media="all" />	
 	</head>
 	<body>
-	<div class="container">
-		<h1>'.$_SESSION['username'].' - Image Gallery</h1>
-		<div class="gallery">
-			<ul>
-				<li><a href="../view/mediaupload.php">Add</a> another image . .</li> 
-			</ul>	';
+	<div class="container">';
+	include("header.php");
+echo '
+		<fieldset>
+				<legend>Image Gallery</legend>
+				<button class="gallerybutton" onclick="this.location(\'../view/mediaupload.php\')">Add another image . .</button> 
+				<div class="clear"></div> 
+				';
 		foreach ($images as $image) {
 			echo '
 			<div class="imagegallerythumbnail">
@@ -43,7 +45,7 @@ echo '
 			</div>';		
 		}		
 echo '
-		</div>
+		</fieldset>	
 	</div>';
 	?>
 	</body>

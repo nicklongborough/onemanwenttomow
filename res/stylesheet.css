@@ -1,15 +1,19 @@
 
 body {
-	background: #eee;
+	background: #fff;
 	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
 	font-size:12px;
-	color: #222;	
+	color: #000;	
 	padding: 10px;
-	}
+	text-align: center; 	
+}
 	
 li {
 	padding: 5px;	
+	text-align:left;
+	font-size: 12px;
 }
+
 
 h1 {
 	font-size:14pt;
@@ -17,7 +21,7 @@ h1 {
 	color: #333;
 	margin:0px;
 	padding:5px 0px 5px 10px;
-	background-color: #c7d9ff;
+	background-color: #ccc;
 	margin: 25px 0px 15px 0px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;    
@@ -34,14 +38,14 @@ h4 {
 
 #hr {       
      clear: both;
-     background-color: #144581;
+     background-color: #ddd;
      height: 3px;
      border: 0px;
      padding:0px;
      margin:0px;
-     }
+}
 
-a {color:#0358b8; font-weight:bold;text-decoration:none;}
+a {color:#333; font-weight:bold;text-decoration:none;}
 a:hover {color:#777;text-decoration:none;}
 a.button {color:white;text-decoration:none;}
 
@@ -58,6 +62,11 @@ button {
     width:90px;
 }
 
+button.gallerybutton {
+	float:none;
+	width: 200px;
+}
+
 input {
 	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
 	width:195px;
@@ -72,6 +81,19 @@ input {
     background-color: #fff;	
 }
 
+input.imageselect {
+	border: none;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;	
+	padding: 8px;	
+	float: none;
+	padding-left: 10pt;
+	align: left;
+	width: 220pt;
+	border: 1px solid #ddd;		
+}
+
+
 fieldset {
   	width:330px;  
     padding:10px;  
@@ -79,7 +101,21 @@ fieldset {
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;    
     margin: auto;
- }
+}
+
+fieldset.header {
+	width: 350px;
+	padding: 0pt;
+	margin: none;
+	border: none;	
+}
+
+legend {
+	padding-left: 2pt;
+	margin-left:5pt;
+	font-weight: bold;
+	text-align: left;	
+} 
  
 label {
    	width:100px;
@@ -88,7 +124,7 @@ label {
     padding-top:4px;
     margin:5px;
     float:left;	
-    color:#003;
+    color:#000;
 }
 
 #clear {
@@ -115,15 +151,6 @@ img.thumbnail {
   height: 100%; 
 }
 
-div.gallery {
-	background-color: #fff;
-	border: 1px solid #ddd;
-	-moz-border-radius: 7px;
-	-webkit-border-radius: 7px;   	
-	width: 60.0em;
-	margin: 0.5em;		
-}
-
 div.imagegalleryimage {
 	border-top: 5px solid #333;
 	border-left: 5px solid #333;	
@@ -132,30 +159,32 @@ div.imagegalleryimage {
 	padding: 0px;
 	overflow: Hidden; 
 	margin: 0;
-	width: 16.0em;
-  	height: 13.0em;
+	width: 9.0em;
+  	height: 6.5em;
 }
 
 div.imagegallerythumbnail {
-		-moz-box-shadow: 3px 3px 4px #bbb;
-		-webkit-box-shadow: 3px 3px 4px #bbb;
-		box-shadow: 3px 3px 4px #000;
-		/* For IE 8 */
-		-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#bbbbbb')";
-		/* For IE 5.5 - 7 */
-		filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#bbbbbb');	
-		width: 17.0em;
-		margin: 0.5em;
-		height: 16.0em;
-		background: #ffffff;
-		border: 1px solid #aaa;
-		padding: 11px;
-		float:left;	
+	-moz-box-shadow: 3px 3px 4px #bbb;
+	-webkit-box-shadow: 3px 3px 4px #bbb;
+	box-shadow: 3px 3px 4px #000;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#bbbbbb')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#bbbbbb');	
+	width: 10.0em;
+	margin: 0.5em;
+	height: 9.5em;
+	background: #ffffff;
+	border: 1px solid #aaa;
+	padding: 15px;
+	float:left;	
 }
 
 div.caption {
 	float: left;
-	width: 100%;
+	width: 11.6em;
+	height: 1.3em;
+	overflow: Hidden; 
 	display: block; 
 	padding-top: 2pt;
 	padding-bottom: 2pt;	
@@ -167,6 +196,9 @@ div.caption {
 
 div.smallcaption {
 	display: block;
+	width: 11.6em;
+	height: 1.0em;
+	overflow: Hidden;	
 	float: left;
 	width: 100%;
 	padding-bottom: 1.0em;	
@@ -211,4 +243,34 @@ div.audit {
 	text-align: left;
 	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
 	font-size:10px;    
+}
+
+div.header {
+	padding-bottom: 10pt;
+	padding-left: 10pt;
+	padding-right: 10pt;
+	color: #088;	
+	font-size: 14pt;
+	font-weight: bold;
+	text-align: left;	
+}
+
+div.rightlink {
+	float: left;
+	width: 130pt;
+	display: block;
+	text-align: right;
+	padding-right: 10pt;
+	padding-top: 5pt;
+	padding-bottom: 5pt;	
+	border-top: 1pt solid #aaa;
+	border-bottom: 1pt solid #aaa;		
+}
+
+div.leftlink {
+	float: left;
+	width: 50pt;
+	padding: 5pt;
+	border-top: 1pt solid #aaa;
+	border-bottom: 1pt solid #aaa;	
 }

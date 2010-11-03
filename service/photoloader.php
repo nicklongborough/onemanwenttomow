@@ -59,6 +59,7 @@ echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	</head>
 	<body>
 	<div class="container">';
+	include("../view/header.php");
 		if ($erroroccured) {
 			echo 'An error has occured <a href="../view/mediaupload.php">click here</a> to try again . . ';
 		} else {
